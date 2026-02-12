@@ -1,0 +1,80 @@
+@import "../../../color-variables.scss";
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: $background-color;
+  font-family: "Roboto", sans-serif;
+  padding: 0 70px;
+
+  span {
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: $primary-text;
+  }
+  h1 {
+    font-size: 4.5rem;
+    font-weight: 800;
+    font-size: 72px;
+    line-height: 110.00000000000001%;
+    letter-spacing: 0%;
+    color: $secondary-text;
+  }
+}
+
+.benefits-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 70px;
+  font-family: "Poppins", sans-serif;
+
+  .benefits-data {
+    padding-bottom: 40px;
+    border-bottom: 10px solid $secondary-color;
+  }
+  h2 {
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    font-family: "Roboto", sans-serif;
+    color: $secondary-text;
+  }
+  div {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+    span {
+      color: $secondary-color;
+    }
+    li {
+      color: $primary-text;
+    }
+  }
+}
+@media (min-width: 1080px) {
+  .main-section {
+    flex-direction: row;
+  }
+
+  .benefits-section {
+    flex-direction: row;
+    justify-content: space-around;
+
+    .benefits-data {
+      max-width: 300px;
+    }
+  }
+}
