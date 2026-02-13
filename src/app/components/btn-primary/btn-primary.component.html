@@ -1,0 +1,9 @@
+<button (click)="submit()" [class]="'btn btn-' + variant" [disabled]="disabled">
+  <span>
+    @if (!loading) {
+      <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"> {{ buttonText }}</span>
+    } @else {
+      <span aria-hidden="true">Carregando...</span>
+    }
+  </span>
+</button>
