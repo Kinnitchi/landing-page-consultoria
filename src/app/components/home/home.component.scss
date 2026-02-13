@@ -1,5 +1,10 @@
 @import "../../../color-variables.scss";
 
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
 .main-section {
   display: flex;
   flex-direction: column;
@@ -36,14 +41,14 @@
   justify-content: center;
   padding: 0 70px;
   font-family: "Poppins", sans-serif;
-
+  gap: 70px;
   .benefits-data {
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     border-bottom: 10px solid $secondary-color;
   }
   h2 {
     font-weight: 600;
-    font-size: 60px;
+    font-size: 45px;
     line-height: 100%;
     letter-spacing: 0%;
     font-family: "Roboto", sans-serif;
@@ -57,13 +62,28 @@
     letter-spacing: 0%;
 
     span {
+      background: linear-gradient(180deg, $primary-color, $light-primary-color);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
       color: $secondary-color;
     }
-    li {
-      color: $primary-text;
+
+    ul {
+      padding-left: 25px;
+      li {
+        font-size: 22px;
+        color: $primary-text;
+      }
     }
   }
 }
+
+.cta-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @media (min-width: 1080px) {
   .main-section {
     flex-direction: row;
