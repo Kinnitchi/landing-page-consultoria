@@ -1,0 +1,35 @@
+<section class="form-section">
+  <div class="text">
+    <h3>Entre em contato</h3>
+    <p>
+      Inscreva-se para receber atualizações, dicas e ofertas exclusivas diretamente na sua caixa de entrada sobre nossos
+      serviços de consultoria e soluções personalizadas para o seu negócio. Atende-se às suas necessidades e impulsione
+      o crescimento da sua empresa com a Kinnitchi Consultoria. Cadastre-se agora e não perca nenhuma novidade!
+    </p>
+  </div>
+
+  <form [formGroup]="newsLetterForm">
+    <label for="name">Nome</label>
+    <input type="text" class="form-control" id="name" formControlName="name" placeholder="Digite seu nome" />
+
+    <label for="email">Email</label>
+    <input type="email" class="form-control" id="email" formControlName="email" placeholder="Digite seu email" />
+
+    <label for="message">Mensagem</label>
+    <textarea
+      class="form-control"
+      id="message"
+      formControlName="message"
+      rows="3"
+      placeholder="Digite sua mensagem"
+    ></textarea>
+
+    <btn-primary
+      buttonText="Entre em contato"
+      variant="secondary"
+      (submit)="onSubmit()"
+      [disabled]="!newsLetterForm.valid"
+      [loading]="loading()"
+    ></btn-primary>
+  </form>
+</section>

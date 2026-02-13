@@ -18,7 +18,7 @@
   }
 
   &.btn-primary {
-    color: $background-color;
+    color: $bg-primary;
     background: -webkit-linear-gradient(180deg, $primary-color, $secondary-color);
     font-size: 24px;
     font-weight: bold;
@@ -28,7 +28,7 @@
     }
   }
   &.btn-secondary {
-    background: $background-color;
+    background: $bg-primary;
     color: $primary-text;
     font-size: 16px;
     font-weight: bold;
